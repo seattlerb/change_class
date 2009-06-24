@@ -2,7 +2,7 @@ require 'rubygems'
 require 'inline'
 
 module ChangeClass
-  VERSION = '1.0.0'
+  VERSION = '1.0.1'
 end
 
 class Object
