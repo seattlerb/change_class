@@ -4,11 +4,13 @@ require 'rubygems'
 require 'hoe'
 require './lib/change_class.rb'
 
-Hoe.new('change_class', ChangeClass::VERSION) do |p|
-  p.rubyforge_name = 'seattlerb'
-  p.developer('Ryan Davis', 'ryand-ruby@zenspider.com')
+Hoe.plugin :seattlerb
+Hoe.plugin :inline
 
-  p.extra_deps << ['RubyInline',     '>= 3.7.0']
+Hoe.spec 'change_class' do
+  developer 'Ryan Davis', 'ryand-ruby@zenspider.com'
+
+  self.rubyforge_name = 'seattlerb'
 end
 
-# vim: syntax=Ruby
+# vim: syntax=ruby
