@@ -1,8 +1,7 @@
 # -*- ruby -*-
 
-require 'rubygems'
-require 'hoe'
-require './lib/change_class.rb'
+require "rubygems"
+require "hoe"
 
 Hoe.add_include_dirs("../../RubyInline/dev/lib",
                      "../../ZenTest/dev/lib")
@@ -10,10 +9,10 @@ Hoe.add_include_dirs("../../RubyInline/dev/lib",
 Hoe.plugin :seattlerb
 Hoe.plugin :inline
 
-Hoe.spec 'change_class' do
-  developer 'Ryan Davis', 'ryand-ruby@zenspider.com'
+Hoe.spec "change_class" do
+  developer "Ryan Davis", "ryand-ruby@zenspider.com"
 
-  self.rubyforge_name = 'seattlerb'
+  self.rubyforge_name = "seattlerb"
 end
 
 # vim: syntax=ruby
