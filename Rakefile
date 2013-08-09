@@ -12,7 +12,7 @@ Hoe.plugin :inline
 Hoe.spec "change_class" do
   developer "Ryan Davis", "ryand-ruby@zenspider.com"
 
-  self.rubyforge_name = "seattlerb"
+  multiruby_skip << "1.9" << "2.0" << "mri_trunk"
 end
 
 # vim: syntax=ruby
