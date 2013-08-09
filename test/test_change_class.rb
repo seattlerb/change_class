@@ -1,4 +1,4 @@
-require 'test/unit'
+require 'minitest/autorun'
 require 'change_class'
 
 class X
@@ -17,7 +17,7 @@ class Thing
   attr_accessor :name
 end
 
-class TestChangeClass < Test::Unit::TestCase
+class TestChangeClass < Minitest::Test
   def test_change_class
     x = X.new
     assert_equal X, x.class
